@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: 'Playfair Display SC', serif;
 }
 
 header > div {
@@ -91,4 +92,5 @@ justify-content: center;
 .second-footer {
   display: flex;
   justify-content: center;
+  
 }
