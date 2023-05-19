@@ -19,6 +19,12 @@ h1{
   margin: 0;
 }
 
+@media (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
 h2 {
 margin: 0;
 }
@@ -36,10 +42,11 @@ nav {
 .main-link {
   border-radius: 1rem;
   border: 1px solid black;
-  padding: 5px 10px;
+  padding: 0 10px;
   text-decoration: black;
   color: black;
   justify-content: center;
+  margin-top: 10%;
 }
 
 h5 {
@@ -54,7 +61,6 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   top: 20px;
   right: 20px;
 }
@@ -65,8 +71,21 @@ main {
 }
 
 .first-main {
+  display: flex;
+  flex-direction: row;
   position: relative;
   min-height: 50vh;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  .first-main {
+    flex-direction: column;
+  }
+  
+  .donate-link {
+    font-size: 50px;
+  }
 }
 
 h3 {
